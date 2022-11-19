@@ -21,7 +21,7 @@ extern uint8_t uart6_rx_flag;
 int main(void)
 {
 
-	LL_USART_EnableIT_RXNE(USART1);		// UART Adapter <-> PC
+	LL_USART_EnableIT_RXNE(USART1);		// STM32 Nucleo <-> PC
 	LL_USART_EnableIT_RXNE(USART6);		// M8N GPS <-> STM32 Nucleo
 
 	while(1)
